@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jQuery.js"></script>
+    <script src="script.js"></script>
+    <style>
+            body {
+              font-family: Arial, sans-serif;
+              background-color: #f2f2f2;
+              padding: 30px;
+            }
+        
+            h1 {
+              text-align: center;
+              color: #333;
+              margin-bottom: 40px;
+            }
+        
+            .section {
+              margin-bottom: 30px;
+            }
+        
+            .section h2 {
+              color: #04AA6D;
+              margin-bottom: 10px;
+            }
+        
+            .content-box {
+              background-color: #ffffff;
+              padding: 15px 20px;
+              border-left: 5px solid #04AA6D;
+              border-radius: 8px;
+              box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+              color: #444;
+            }
+        
+            button {
+                background-color: #04AA6D;
+                color: white;
+                border: none;
+                padding: 10px 18px;
+                font-size: 16px;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: background-color 0.3s ease, transform 0.2s ease;
+                margin-top: 10px;
+              }
+              
+              button:hover {
+                background-color: #038c5a;
+                transform: scale(1.03);
+              }
+              
+              button:active {
+                transform: scale(0.98);
+              }
+          </style>
+</head>
+<body>
+    <h1>Latihan JQuery Mohammad Rizki Syahputra</h1>
+
+    <h2>Section 1 JQuery Hide/Show</h2>
+    <div class="jQueryHide/Show section">
+        <div class="content-box">
+            <p id="showhidep">Click tombol dibawah untuk Hide. Menggunakan hide() and show()</p>
+            <button id="showhide">Hide Konten</button>
+
+            <p id="togglep">Click tombol dibawah untuk Hide. Menggunakan toggle()</p>
+            <button id="toggle">Hide Konten</button>
+        </div>
+        </div>
+    </div>
+
+    <h2>Section 2 JQuery Fade</h2>
+    <div class="jQuery Fade">
+        <div class="content-box">
+            <button id="controllerfade">Click me to show the paragraphs menggunakan fadeIn() dan fadeOut()</button>
+
+            <p id="fadep1" style="display:none">Pada zaman dahulu kala</p>
+            <p id="fadep2" style="display:none">Jadi ada seekor kancil dan buaya</p>
+            <p id="fadep3" style="display:none">Dan mereka melakukan apa yang kancil dan buaya lakukan</p>
+            <p id="fadep4" style="display:none">The end.</p>
+
+            <button id="controllerfade2">Click me to show the paragraphs menggunakan fadeToggle()</button>
+
+            <p id="fadep5" style="display:none">Pada zaman dahulu kala</p>
+            <p id="fadep6" style="display:none">Jadi ada seekor kancil dan buaya</p>
+            <p id="fadep7" style="display:none">Dan mereka melakukan apa yang kancil dan buaya lakukan</p>
+            <p id="fadep8" style="display:none">The end.</p>
+
+            <button id="controllerfade3">Click me to show the paragraphs menggunakan fadeTo()</button>
+
+            <p id="fadep9" style="display:none; opacity:0">Pada zaman dahulu kala</p>
+            <p id="fadep10" style="display:none">Jadi ada seekor kancil dan buaya</p>
+            <p id="fadep11" style="display:none">Dan mereka melakukan apa yang kancil dan buaya lakukan</p>
+            <p id="fadep12" style="display:none">The end.</p>
+        </div>
+    </div>
+
+    <h2>Section 3 JQuery Slide</h2>
+    <div class="content-box">
+        <button id="controllerslide">Click me to show paragraphs menggunakan slideDown()</button>
+
+        <p id="slidep1" style="display:none">Pada zaman dahulu kala</p>
+        <p id="slidep2" style="display:none">Jadi ada seekor kancil dan buaya</p>
+        <p id="slidep3" style="display:none">Dan mereka melakukan apa yang kancil dan buaya lakukan</p>
+        <p id="slidep4" style="display:none">The end.</p>
+
+        <button id="controllerslide2">Click me to show paragraphs menggunakan slideToggle()</button>
+
+        <p id="slidep5" style="display:none">Pada zaman dahulu kala</p>
+        <p id="slidep6" style="display:none">Jadi ada seekor kancil dan buaya</p>
+        <p id="slidep7" style="display:none">Dan mereka melakukan apa yang kancil dan buaya lakukan</p>
+        <p id="slidep8" style="display:none">The end.</p>
+    </div>
+
+    <h2>Section 4 JQuery Animate</h2>
+    <div class="content-box">
+        <button id="controlleranimate">Click me to show the paragraphs menggunakan animate()</button>
+
+        <p id="animatep1" style="position: relative; opacity: 0; font-size: 14px; display:none">Pada zaman dahulu kala</p>
+        <p id="animatep2" style="position: relative; opacity: 0; font-size: 14px; display:none">Jadi ada seekor kancil dan buaya</p>
+        <p id="animatep3" style="position: relative; opacity: 0; font-size: 14px; display:none">Dan mereka melakukan apa yang kancil dan buaya lakukan</p>
+        <p id="animatep4" style="position: relative; opacity: 0; font-size: 14px; display:none">The end.</p>
+    </div>
+
+    <h2>Section 5 JQuery Stop</h2>
+    <div class="content-box">
+        <button id="startcontroller">Start Sliding/Animate</button>
+        <button id="stopcontroller">Stop Sliding/Animate</button>
+
+        <div id="boxanimate" style="width: 100px; height: 100px; background-color: coral; position: relative; margin-top: 20px;"></div>
+    </div>
+
+    <h2>Section 6 JQuery Chaining</h2>
+    <div class="content-box">
+    <button id="chaincontroller">Start Chaining</button>
+    <div id="chainbox" style="width: 100px; height: 100px; background-color: coral; margin-top: 20px;"></div>
+    </div>
+</body>
+</html>
