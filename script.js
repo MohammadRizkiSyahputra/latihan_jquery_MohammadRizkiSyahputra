@@ -11,9 +11,8 @@ $(document).ready(function() {
 
     $("#showhide").click(function() {
         if ($("#showhidep").is(":visible")) {
-            $("#showhidep").hide("slow"); {
-                $("#showhide").text("Show Content")
-            };
+            $("#showhidep").hide("slow");
+            $("#showhide").text("Show Content");
         } else {
             $("#showhidep").show("slow"); {
                 $("#showhide").text("Hide Content")
@@ -24,10 +23,10 @@ $(document).ready(function() {
     $("#controllerfade").click(function() {
         if ($("#fadep1, #fadep2, #fadep3, #fadep4").is(":hidden")) {
             $("#fadep1, #fadep2, #fadep3, #fadep4").fadeIn("slow");
-            $("#controllerfade").text("Click me to hide the paragraph menggunakan fadeIn() dan fadeOut()")
+            $("#controllerfade").text("Click me to hide the paragraph menggunakan fadeOut()")
         } else {
             $("#fadep1, #fadep2, #fadep3, #fadep4").fadeOut("fast");
-            $("#controllerfade").text("Click me to show the paragraph menggunakan fadeIn() dan fadeOut()")
+            $("#controllerfade").text("Click me to show the paragraph menggunakan fadeIn()")
         }
     })
 
